@@ -1,0 +1,87 @@
+body {
+    background-color: #F4F5F9; /* ColorZilla */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding-left: 0;
+}
+
+ul ul {
+    padding-left: 20px; /* Отступ для вложенных списков */
+}
+
+
+ul li a {
+    display: inline-block; /* Ссылка оборачивает только текст, а не занимает всю ширину */
+    padding: 10px 15px; /* Отступы внутри "квадрата" */
+    background-color: #f0f0f0; /* Цвет фона */
+    border-radius: 4px; /* Скругленные углы */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет текста */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона при наведении */
+    margin-bottom: 10px; /* Отступ между пунктами меню */
+    border: 1px solid #ccc; /* Тонкая серая рамка */
+}
+
+ul li a.active {
+    background-color: #007bff; /* Цвет фона для активного пункта */
+    color: #fff; /* Цвет текста для активного пункта */
+    border-color: #007bff; /* Меняем цвет рамки для активного пункта */
+}
+
+ul li a:hover {
+    background-color: #007bff; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+    border-color: #007bff; /* Меняем цвет рамки при наведении */
+}
+
+.blue-text {
+    color: #0AA1E2;
+}
+
+.dynamic-margin {
+    margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .dynamic-margin {
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dynamic-margin {
+        margin-left: 100px;
+    }
+}
+
+.header-with-top-margin {
+    margin-top: 60px; /* Увеличенный отступ сверху */
+}
+
+.menu-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu-container .menu {
+    flex-grow: 1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Контейнер занимает всю ширину */
+    height: 100vh; /* Контейнер занимает всю высоту окна */
+}
+
+.menu-image {
+    height: auto;
+    max-width: 100%;
+    margin-left: 20px;
+}

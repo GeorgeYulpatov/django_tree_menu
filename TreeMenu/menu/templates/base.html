@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load menu_tags %}
+    <meta charset="UTF-8">
+    <title>Меню</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1 class="dynamic-margin header-with-top-margin">
+        Пример реализации <br /><span class="blue-text">древовидного меню</span>
+        в <br /><span class="blue-text">Django</span>
+    </h1>
+
+    <div class="menu-container">
+        <div class="menu">
+            {% draw_menu 'main_menu' %}
+        </div>
+        <div class="image-container">
+            <img id="menuImage" src="{% static 'images/succulents.png' %}" alt="Menu Image" class="menu-image">
+        </div>
+    </div>
+
+    <script src="{% static 'js/resize.js' %}"></script>
+</body>
+</html>
